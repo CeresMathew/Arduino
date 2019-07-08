@@ -28,14 +28,7 @@ const int BlinkerLinks = 4;     // the number of the pushbutton pin
 
 
 void setup() {
-  // These lines are specifically to support the Adafruit Trinket 5V 16 MHz.
-  // Any other board, you can remove this part (but no harm leaving it):
-#if defined(__AVR_ATtiny85__) && (F_CPU == 16000000)
-  clock_prescale_set(clock_div_1);
-#endif
-  // END of Trinket-specific code.
-
-  pixels.begin(); // INITIALIZE NeoPixel strip object (REQUIRED)
+ pixels.begin(); // INITIALIZE NeoPixel strip object (REQUIRED)
 
 
 // initialize the pushbutton pin as an input:
